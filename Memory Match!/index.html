@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+ <html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <title>Memory Match!</title>
+</head>
+
+<body>
+  <header>
+    <h1>Welcome to Memory Match</h1>
+    <p>Find all the matching pairs!</p>
+  </header>
+
+ <div id="game-container"> 
+    <div id="starting-page" class="screen-visible">
+       <h3> Select difficulty: </h3>
+       <div class="diff_btns">
+         <button id="easy_btn" class="diff_btn">EASY</button>
+         <button id="medium_btn" class="diff_btn">MEDIUM</button>
+         <button id="hard_btn" class="diff_btn">HARD</button>
+       </div>
+    </div>
+
+    <div id="stats_container" class="hidden">
+       <div id="moves_counter" class="stat">Moves: 0</div>
+        <div id="timer" class="stat">Time: 0s</div>
+       <button id="reset_btn" class="diff_btn">RESET GAME</button>
+    </div>
+    <main id="game_board" class="memory_game"></main>
+  </div>
+
+  <div id="modal" class="hidden modal-overlay">
+    <div class="modal-content">
+       <h2 id="modal-message"></h2>
+        <p id="modal-stats"></p>
+       <button id="modal-close-button" class="diff_btn">Play Again</button>
+     </div>
+  </div>
+</body>
+
+</html>
